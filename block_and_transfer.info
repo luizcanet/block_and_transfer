@@ -1,0 +1,15 @@
+name = Block and Transfer
+description = Adds the option to transfer content from a blocked account to another.
+core = 7.x
+package = Features
+version = 7.x-1.0-beta1
+project = block_and_transfer
+dependencies[] = rules
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[rules_config][] = rules_block_and_transfer_content
+features[rules_config][] = rules_notify_new_author
+features[views_view][] = transfer_content
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][entity] = entity
